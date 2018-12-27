@@ -18,34 +18,40 @@ FSJS project 1 - A Random Quote Generator
 
 var quotes = [
     {
-        quote: "Something somebody said",
-        source: "Somebody who said",
-        citation: "Whatever this is",
-        year: "1944"
+        quote: "It always seems impossible until it's done.",
+        source: "-Nelson Mandela",
     },
     {
-        quote: "Something somebody said",
-        source: "Somebody who said",
-        citation: "Whatever this is",
-        year: "1944"
+        quote: "Our greatest glory is not in never falling, but in rising every time we fall.",
+        source: "-Confucius",
     },
     {
-        quote: "Something somebody said",
-        source: "Somebody who said",
-        citation: "Whatever this is",
-        year: "1944"
+        quote: "All our dreams can come true, if we have the courage to pursue them.",
+        source: "-Walt Disney",
     },
     {
-        quote: "Something somebody said",
-        source: "Somebody who said",
-        citation: "Whatever this is",
-        year: "1944"
+        quote: "It does not matter how slowly you go as long as you do not stop.",
+        source: "-Confucius",
     },
     {
-        quote: "Something somebody said",
-        source: "Somebody who said",
-        citation: "Whatever this is",
-        year: "1944"
+        quote: "Everything you’ve ever wanted is on the other side of fear.",
+        source: "-George Addair",
+    },
+    {
+        quote: "There is only one thing that makes a dream impossible to achieve: the fear of failure.",
+        source: "-Paulo Coelho",
+    },
+    {
+        quote: "Too many of us are not living our dreams because we are living our fears.",
+        source: "-Les Brown",
+    },
+    {
+        quote: "If you believe it will work out, you’ll see opportunities. If you believe it won’t, you will see obstacles.",
+        source: "-Wayne Dyer",
+    },
+    {
+        quote: "Whatever you hold in your mind on a consistent basis is exactly what you will experience in your life.",
+        source: "-Tony Robbins",
     },
 ];
 
@@ -57,6 +63,9 @@ var quotes = [
      `quotes` array.
 ***/
 
+function getRandomQuote() {
+    var randomNumber = quotes[Math.floor(Math.random() * quotes.length) + 1];
+}
 
 
 
