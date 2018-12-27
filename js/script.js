@@ -57,9 +57,8 @@ var quotes = [
      `quotes` array.
 ***/
 
-function getRandomQuote() {
-    var randomQuote = quotes[Math.floor(Math.random() * quotes.length) + 1];
-    return randomQuote
+function getRandomQuote(quotes) {
+    return quotes[Math.floor(Math.random() * quotes.length) + 1];
 }
 
 
@@ -74,12 +73,15 @@ function getRandomQuote() {
    - set the `innerHTML` of the `quote-box` div to the HTML string.
 ***/
 
-// <p class="quote"> [quote here] </p>
-// <p class="source"> [source here]
-//   <span class="citation"> [citation here] </span>
-//   <span class="year"> [year here] </span>
-// </p>
+function printQuote() {
+    getRandomQuote(quotes)
 
+    <p class="quote"> getRandomQuote().quote </p>
+    <p class="source"> getRandomQuote().source
+      <span class="citation"> getRandomQuote().citation </span>
+      <span class="year"> getRandomQuote().year </span>
+    </p>
+}
 
 /***
   When the "Show another quote" button is clicked, the event listener
