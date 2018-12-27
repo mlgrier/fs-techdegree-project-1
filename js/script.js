@@ -19,31 +19,31 @@ FSJS project 1 - A Random Quote Generator
 var quotes = [
     {
         quote: "Here’s Johnny!",
-        source: "-Jack Nicholson",
+        source: "Jack Nicholson",
         citation: "The Shining",
         year: 1980,
     },
     {
         quote: "Warriors, come out to play",
-        source: "-David Patrick Kelly",
+        source: "David Patrick Kelly",
         citation: "The Warriors",
         year: 1979,
     },
     {
         quote: "I wish I had a theater that was only open when it rained",
-        source: "-Bill Murray",
+        source: "Bill Murray",
         citation: "Tootsie",
         year: 1982,
     },
     {
         quote: "Want to hear the most annoying sound in the world?",
-        source: "-Jim Carrey",
+        source: "Jim Carrey",
         citation: "Dumb And Dumber",
         year: 1994,
     },
     {
         quote: "Kelly Clarkson!",
-        source: "-Steve Carell",
+        source: "Steve Carell",
         citation: "The 40-Year-Old Virgin",
         year: 2005,
     },
@@ -57,8 +57,8 @@ var quotes = [
      `quotes` array.
 ***/
 
-function getRandomQuote() {
-    var randomQuote = quotes[Math.floor(Math.random() * quotes.length) + 1];
+function getRandomQuote(arr) {
+    var randomQuote = arr[Math.floor(Math.random() * arr.length) + 1];
     return randomQuote;
 }
 
@@ -74,25 +74,28 @@ function getRandomQuote() {
 ***/
 
 function printQuote() {
-    var year = getRandomQuote().year;
-    var quote = getRandomQuote().quote;
-    var source = getRandomQuote().source;
-    var citation = getRandomQuote().citation;
+    getRandomQuote(quotes)
 
-    var superText = <p>something to say</p>;
+    var year = getRandomQuote(quotes).year;
+    var quote = getRandomQuote(quotes).quote;
+    var source = getRandomQuote(quotes).source;
+    var citation = getRandomQuote(quotes).citation;
 
-    document.getElementById('quote-box').innerHTML = superText;
-
-    var superText = <p>something to say</p>;
-
-    // var superQuote = <p class="quote"> quote </p>;
-    // superQuote += <p class="source"> source;
-    //   <span class="citation"> citation </span>
-    //   <span class="year"> year </span>
-    // </p>
 }
 
+// var citation = getRandomQuote().citation;
 
+// var superText = <p>something to say</p>;
+//
+// document.getElementById('quote-box').innerHTML = superText;
+//
+// var superText = <p>something to say</p>;
+
+// var superQuote = <p class="quote"> quote </p>;
+// superQuote += <p class="source"> source;
+//   <span class="citation"> citation </span>
+//   <span class="year"> year </span>
+// </p>
 
 /***
   When the "Show another quote" button is clicked, the event listener
