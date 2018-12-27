@@ -18,40 +18,34 @@ FSJS project 1 - A Random Quote Generator
 
 var quotes = [
     {
-        quote: "It always seems impossible until it's done.",
-        source: "-Nelson Mandela",
+        quote: "Here’s Johnny!",
+        source: "-Jack Nicholson",
+        citation: "The Shining",
+        year: 1980,
     },
     {
-        quote: "Our greatest glory is not in never falling, but in rising every time we fall.",
-        source: "-Confucius",
+        quote: "Warriors, come out to play",
+        source: "-David Patrick Kelly",
+        citation: "The Warriors",
+        year: 1979,
     },
     {
-        quote: "All our dreams can come true, if we have the courage to pursue them.",
-        source: "-Walt Disney",
+        quote: "I wish I had a theater that was only open when it rained",
+        source: "-Bill Murray",
+        citation: "Tootsie",
+        year: 1982,
     },
     {
-        quote: "It does not matter how slowly you go as long as you do not stop.",
-        source: "-Confucius",
+        quote: "Want to hear the most annoying sound in the world?",
+        source: "-Jim Carrey",
+        citation: "Dumb And Dumber",
+        year: 1994,
     },
     {
-        quote: "Everything you’ve ever wanted is on the other side of fear.",
-        source: "-George Addair",
-    },
-    {
-        quote: "There is only one thing that makes a dream impossible to achieve: the fear of failure.",
-        source: "-Paulo Coelho",
-    },
-    {
-        quote: "Too many of us are not living our dreams because we are living our fears.",
-        source: "-Les Brown",
-    },
-    {
-        quote: "If you believe it will work out, you’ll see opportunities. If you believe it won’t, you will see obstacles.",
-        source: "-Wayne Dyer",
-    },
-    {
-        quote: "Whatever you hold in your mind on a consistent basis is exactly what you will experience in your life.",
-        source: "-Tony Robbins",
+        quote: "Kelly Clarkson!",
+        source: "-Steve Carell",
+        citation: "The 40-Year-Old Virgin",
+        year: 2005,
     },
 ];
 
@@ -64,7 +58,8 @@ var quotes = [
 ***/
 
 function getRandomQuote() {
-    var randomNumber = quotes[Math.floor(Math.random() * quotes.length) + 1];
+    var randomQuote = quotes[Math.floor(Math.random() * quotes.length) + 1];
+    return randomQuote
 }
 
 
