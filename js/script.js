@@ -79,7 +79,11 @@ function getRandomQuote() {
    - set the `innerHTML` of the `quote-box` div to the HTML string.
 ***/
 
-
+// <p class="quote"> [quote here] </p>
+// <p class="source"> [source here]
+//   <span class="citation"> [citation here] </span>
+//   <span class="year"> [year here] </span>
+// </p>
 
 
 /***
