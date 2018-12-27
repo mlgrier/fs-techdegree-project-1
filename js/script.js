@@ -74,12 +74,13 @@ function getRandomQuote(arr) {
 ***/
 
 function printQuote() {
-    getRandomQuote(quotes)
 
-    var year = getRandomQuote(quotes).year;
-    var quote = getRandomQuote(quotes).quote;
-    var source = getRandomQuote(quotes).source;
-    var citation = getRandomQuote(quotes).citation;
+    var x = new getRandomQuote(quotes);
+
+    console.log(x.year);
+    console.log(x.source);
+    console.log(x.citation);
+    console.log(x.quote);
 
 }
 
